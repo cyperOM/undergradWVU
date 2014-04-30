@@ -1,0 +1,10 @@
+The terminate Process command deletes and
+frees the PCB with the given name.
+
+
+Takes in one parameter which is a string
+terminateProc(Process/PCB name);
+
+Example: terminateProc(proc1);
+
+

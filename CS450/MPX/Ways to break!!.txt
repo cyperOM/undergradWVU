@@ -1,0 +1,37 @@
+Ways to break!!
+
+-------------------------
+loadProc();
+
+load processes then use show all to make sure all 5 processes is in the queue
+do multiple times to make sure PCB's cant have the same name.
+-------------------------
+dispatch();
+
+dispatch when nothing in the queues
+dispatch with r3 processes loaded (loadProc)
+dispatch with r4 processes loaded (loadProgram)
+dispatch with both r3 and r4 processes
+3x(load r3, dispatch, load r4 dispatch, load r3 and r4 dispatch)
+
+-------------------------
+loadProgram(string,int) or loadProgram(string)
+
+load all programs (proc1-5) then dispatch
+load 1 program then dispatch
+load 2 programs then dispatch
+load 3 programs then dispatch
+load 4 programs then dispatch
+load program with negative priority 
+load program with bad priority (try alot of them)
+load program with an already existing name
+load program with no existing file name (no file in directory)
+
+-------------------------
+terminateProc(string);
+
+load a process/program then terminate it. use ShowAll(); to make sure that it has been deleted.
+terminate a process that isnt in a queue 
+create a system process and try to delete it. (should not work)
+
+-------------------------

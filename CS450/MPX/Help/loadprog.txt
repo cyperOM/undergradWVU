@@ -1,0 +1,21 @@
+The load Program command loads a file 
+into memory for execution. The file needs
+to be a .mpx file.
+
+There are two ways to call this command:
+
+1st way:
+
+Takes in one parameter which is a string
+loadProgram(Process name);
+
+Example: loadProgram(proc1);
+
+2nd way:
+
+Takes in two parameters. First one is a
+string and the second parameter is an integer
+loadProgram(Process name, priority);
+
+Example: loadProgram(proc1,1);
+

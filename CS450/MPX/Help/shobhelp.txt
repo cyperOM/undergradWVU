@@ -1,0 +1,30 @@
+The Show Blocked command allows you to view all the PCB's 
+that are in blocked state and suspended blocked state
+
+It will show you: 
+Blocked States:
+Name of the PCB
+Priority of the PCB
+If the PCB is Suspended or Resumed
+Status of the PCB
+
+Suspended Blocked States:
+Name of the PCB
+Priority of the PCB
+If the PCB is Suspended or Resumed
+Status of the PCB
+
+To access this by: showBlocked();
+Example: showBlocked();
+
+Blocked States:
+Name: PCB1
+Priority: 1
+Suspended: Resumed
+Status: Blocked
+
+Suspended Blocked States:
+Name: PCB2
+Priority: 2
+Suspended: Suspended
+Status: Blocked

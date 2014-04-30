@@ -1,0 +1,14 @@
+The Show All command allows you to view all the PCB's
+It will show you: 
+Name of the PCB
+Priority of the PCB
+If the PCB is Suspended or Resumed
+Status of the PCB
+
+To access this by: showAll();
+Example: showAll();
+
+Name: PCB1
+Priority: 1
+Suspended: Suspended
+Status: Ready

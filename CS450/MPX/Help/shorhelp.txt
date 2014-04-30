@@ -1,0 +1,30 @@
+The Show Ready command allows you to view all the PCB's 
+that are in ready state and suspended ready state
+
+It will show you: 
+Ready States:
+Name of the PCB
+Priority of the PCB
+If the PCB is Suspended or Resumed
+Status of the PCB
+
+Suspended Ready States:
+Name of the PCB
+Priority of the PCB
+If the PCB is Suspended or Resumed
+Status of the PCB
+
+To access this by: showReady();
+Example: showReady();
+
+Ready States:
+Name: PCB1
+Priority: 1
+Suspended: Resumed
+Status: Ready
+
+Suspended Ready States:
+Name: PCB2
+Priority: 2
+Suspended: Suspended
+Status: Ready

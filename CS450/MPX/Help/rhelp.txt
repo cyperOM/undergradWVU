@@ -1,0 +1,7 @@
+The Resume command allows the user to not suspend a PCB and has the PCB in a resumed state.
+
+The user can access this by: resumePCB(char PCBName);
+
+This will resume the PCB.
+
+Example: resumePCB(PCB1);

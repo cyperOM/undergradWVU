@@ -1,0 +1,28 @@
+Welcome to the Combustible Lemonade Help System!
+
+To run a command type: nameOfCommand(parameterList);
+
+The full list of functions are: 
+	-version
+	-changeDate
+	-displayDate
+	-help
+	-displayDir
+ 	-terminate
+	-createPCB
+	-deletePCB
+	-block
+	-suspend
+	-resume
+	-setPriority
+	-showPCB
+	-showAll
+	-showReady
+	-showBlocked
+	-dispatch
+	-loadProc
+	-loadProgram
+	-terminateProc
+
+If assistance is required for one of the above commands
+type: help(commandName);

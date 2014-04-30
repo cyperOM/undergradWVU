@@ -1,0 +1,15 @@
+The Show PCB command allows you to view the PCB's the user
+would like to view it will tell you: 
+
+Name of the PCB
+Priority of the PCB
+If the PCB is Suspended or Resumed
+Status of the PCB
+
+To access this by: showPCB(char PCBName);
+Example: showPCB(PCB1);
+
+Name: PCB1
+Priority: 1
+Suspended: Suspended
+Status: Ready

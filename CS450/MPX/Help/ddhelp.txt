@@ -1,0 +1,5 @@
+The Display Date command states the current date of the
+system. The program displays it in the form of: 
+January 28, 2014.
+The user can access this by: displayDate();
+No parameters are necessary. 

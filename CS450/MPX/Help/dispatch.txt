@@ -1,0 +1,7 @@
+The dispatch command executes processes 
+in to the ready queue.
+
+It does not taken in any parameters.
+
+Example: dispatch();
+

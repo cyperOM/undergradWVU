@@ -1,0 +1,149 @@
+-------------------------
+displayDate();
+
+No Parameters
+
+Shows the date of the system date
+-------------------------
+changeDate( int1, int2, int3);
+
+int1 = month
+int2 = day
+int3 = year
+
+changes the date of the system date
+-------------------------
+displayDir();
+
+No Parameters
+
+Displays the .mpx files in the directory
+-------------------------
+version();
+
+No Parameters
+
+Shows the version of the MPX system
+
+-------------------------
+terminate();
+
+No Parameters
+
+Allows the termination of the MPX system
+-------------------------
+help();
+
+No Parameters
+
+Displays the General Help of the MPX Ssystem
+-------------------------
+help(str1);
+
+str1 = command Name
+
+Displays the General Help of the MPX Ssystem
+-------------------------
+
+createPCB(String1, int1, int2);
+
+String1 = name of PCB
+int1 = PCBclass (0 or 1)
+int2 = priority
+
+Creates a PCB and adds it to the ready Queue
+
+-------------------------
+
+deletePCB(String1);
+
+String1 = name of PCB
+
+Completley removes the PCB from the MPX System
+-------------------------
+block(String1);
+
+String1 = name of PCB
+
+changes the state of the PCB to blocked and adds it to the blocked queue
+-------------------------
+unblock(String1);
+
+String1 = name of PCB
+
+changes the state of the PCB to unblocked and adds it to the ready queue
+-------------------------
+suspend(String1);
+
+String1 = name of PCB
+
+changes the state of the PCB to blocked and adds it to one of the suspended queues
+-------------------------
+resume(String1);
+
+String1 = name of PCB
+
+changes the state of the PCB to ready and adds it to the ready queue
+-------------------------
+setPriority(String1, int1);
+
+String1 = name of PCB
+int1 = priority
+
+Changes Priority of the PCB
+-------------------------
+showPCB(String1);
+
+String1 = name of PCB
+
+Shows PCB of name
+-------------------------
+showAll();
+
+No Parameters
+
+Shows all PCBs in MPX system
+-------------------------
+showReady();
+
+No Parameters
+
+Shows all of the PCBs in the ready Queue
+-------------------------
+showBlocked();
+
+No Parameters
+
+Shows all of the PCBs in the blocked Queue
+-------------------------
+loadProc();
+
+No Parameters
+
+Loads the test Processes (5 in total)
+-------------------------
+dispatch();
+
+No Parameters
+
+Executes processes in the ready Queue 
+-------------------------
+loadProgram(String1);
+
+String1 = Process Name
+
+Loads a file (.mpx) into memory for execution
+-------------------------
+loadProgram(String1,int1);
+
+String1 = Process Name
+int1 = priority
+
+Loads a file (.mpx) into memory for execution
+-------------------------
+terminateProc(String1);
+
+String1 = Process/PCB Name
+
+Deletes and Frees the PCB with the name given.  
+-------------------------

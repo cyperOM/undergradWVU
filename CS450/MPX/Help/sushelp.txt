@@ -1,0 +1,8 @@
+The Suspend PCB command allows you to suspended the PCB 
+that the user choices.
+
+The user can access this by: suspendPCB(char PCBName);
+
+This will suspend the PCB.
+
+Example: suspendPCB(PCB1);

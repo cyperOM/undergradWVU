@@ -1,0 +1,7 @@
+The Delete PCB command allows you to delete a PCB.
+
+The user can access this by: deletePCB(char PCBName);
+
+This will delete the PCB.
+
+Example: deletePCB(PCB1);

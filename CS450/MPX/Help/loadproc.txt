@@ -1,0 +1,7 @@
+The loadProc command is a way to test R3 and R4. 
+It loads the test processes (5 in total).
+
+Is does not taken in any parameters.
+
+Example: loadProc();
+

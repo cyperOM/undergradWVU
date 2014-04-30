@@ -1,0 +1,5 @@
+The Version command states the version of the MPX system.
+It also displays the due date for the current module.
+The user can access this by: version();
+No parameters are necessary.
+

@@ -1,0 +1,7 @@
+The Help Command displays the MAN pages for the MPX system.
+Information such as how to run each function and the
+parameters are listed. For general help with the MPX system
+(such as names of functions) can be found by: help();
+For more specific help with a command use: help(nameOfFunction); 
+Example: help(terminate); 
+

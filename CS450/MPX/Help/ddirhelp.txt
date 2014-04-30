@@ -1,0 +1,6 @@
+The displayDirectory command queries the current directory
+from which the program file has been launched. It searches for 
+all .mpx file types in the root directory of the project, and prints
+them to the terminal.
+To use the displayDirectory command use: displayDir();
+No parameters are necessary.

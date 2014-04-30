@@ -1,0 +1,8 @@
+The Create PCB command allows you to create a PCB.
+
+The user can access this by:
+createPCB(char processName, int PCBclass,int priority);
+
+This will create the PCB
+
+Example: createPCB(ThisIsPCB1,1,1);

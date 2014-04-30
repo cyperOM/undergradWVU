@@ -1,0 +1,7 @@
+The block command allows the user to put the PCB in a blocked state
+
+The user can access this by: block(char PCBName);
+
+This will block the PCB.
+
+Example: block(PCB1);

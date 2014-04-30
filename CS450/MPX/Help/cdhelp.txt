@@ -1,0 +1,5 @@
+The Change Date command allows you to change the date of
+the system. After you change it, the program displays it 
+in the form of: "The date is: January 28,2014"
+To access this by: changeDate(int month,int day,int year);
+Example: changeDate(2,14,2014);

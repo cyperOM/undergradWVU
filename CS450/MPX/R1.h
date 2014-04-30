@@ -1,0 +1,15 @@
+void commhand();
+void DisplayDate();
+void ChangeDate(int,int,int);
+void DisplayDir();
+void Version();
+void Help();
+int Term();
+void getFileName(char[],char[]);
+void makeCommandList(char [][128]);
+void BreakCommandApart(char[128], char [][128]);
+int checkParameters(char [][128],char[][128]);
+void getUserTypes(char [][128],char []);
+void getTypes(char [128],char [],char []);
+void readFile(char [128]);
+void ChangePrompt(char[128]);

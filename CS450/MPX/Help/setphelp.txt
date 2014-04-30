@@ -1,0 +1,8 @@
+The Set Priority command allows the user to set the priority of the PCB
+
+This fuction takes in two parameters. 
+The first parameter is a character.
+The last parameter is an integer.
+setPriority(char PCBName, int inputPriority);
+
+Example: block(PCB1,2);

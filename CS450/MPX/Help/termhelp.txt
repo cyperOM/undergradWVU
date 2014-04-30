@@ -1,0 +1,7 @@
+The Terminate command allows the MPX to exit after asking
+the user if they want to terminate.
+If they select yes. The program will exit. If the user types
+no the MPX system will remain active.
+To use the Terminate command use: terminate();
+No parameters are necessary.
+

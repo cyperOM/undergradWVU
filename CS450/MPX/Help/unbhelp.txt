@@ -1,0 +1,7 @@
+The unblock command allows the user to put the PCB in a unblocked state
+
+The user can access this by: unblock(char PCBName);
+
+This will unblock the PCB.
+
+Example: unblock(PCB1);
