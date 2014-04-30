@@ -1,0 +1,77 @@
+import java.util.Scanner;
+public class Account  {
+  Scanner in = new Scanner (System.in);
+  private  String accountNumber = "";
+  private double amount;
+  private int numTransactions =0;
+  public int transCounter = 0;
+  private Transaction [] transactions;
+  private String accountType;
+  private double accountBalance = 0;
+  
+  public Account(String actNum, double bal) {
+    accountNumber = actNum;
+    accountBalance = bal;
+    transactions = new Transaction [10];
+    transCounter++;    
+  }// end Account
+  
+  public void withdraw(double amount, String actNum){ 
+    addTransaction( actNum, "Withdraw",  amount); 
+  }// end withdraw
+  
+  public void addTransaction(String actNum, String transType, double amount){
+    transactions[transCounter] = new Transaction (actNum, transType, amount);
+    transCounter++;  
+  }// end transactionAmount
+  
+  
+  
+  public void deposit (double amount, String actNum){
+    String actNumber = getAccountNumber();
+    if ( actNumber == actNum){
+      double balance = getBalance();
+      amount = amount + balance;
+      addTransaction( actNum, "Deposit",  amount);
+    }// if
+  }// end deposit
+   
+  public void addInterest(Customer cust, String actNum, String actType) {
+    double rate= 0;
+    double bal = 0;
+    System.out.println("How many months do you want to compound?");
+    double compound = in.nextDouble();    
+    
+    if (actType.compareTo("savings") == 0  || actType.compareTo("Savings") == 0) 
+      rate = cust.getSavingInterest();
+    
+    if (actType.compareTo("checking") == 0  || actType.compareTo("Checking") == 0) 
+      rate = cust.getCheckingInterest();
+    double answer = Math.pow(bal * (1 + rate), compound);
+    
+    addTransaction( actNum, "Interest",  answer);
+  }// end addInterest
+  
+  public String getAccountNumber(){
+    return accountNumber; 
+  }// end getter: getAccountNumber
+  
+  public double getBalance() {
+     
+    return accountBalance;
+  }// end getter: getBalance
+  
+  public String toString(){ 
+    return "Account Number: " + accountNumber + "/n Account Balance: " + accountBalance + ".";
+  }// end toString
+
+  public void displayTrans(){
+    for(int i = 0; i < 0; i ++ ) {
+      System.out.println(transactions[i]);
+    }// end for
+  }// end displayTrans
+  
+  
+  
+  
+}// end Account

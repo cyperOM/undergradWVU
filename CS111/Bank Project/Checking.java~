@@ -1,0 +1,21 @@
+public class Checking extends Account {
+
+  public Checking (String actNum, double bal){
+    super(actNum, bal);
+} // end Customer
+  
+  public void deposit(double amount){
+    String actNum = getAccountNumber();
+  double balance = getBalance();
+  amount = amount + balance;
+
+    addTransaction(actNum, "Deposit",  amount);
+    
+    
+  }// end deposit
+  
+  public void withdraw(Customer cust, double amount, String actNum) {
+
+        addTransaction(actNum, "Withdraw",  amount);
+  }// end withdraw
+}// end Checking

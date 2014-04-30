@@ -1,0 +1,20 @@
+public class Savings extends Account {
+ 
+  public Savings (String actNum, double bal){
+    super(actNum, bal);
+  } // end Customer
+  
+  public void deposit(double amount, String actNum){
+    String actNumber = getAccountNumber();
+    if ( actNumber == actNum){
+      double balance = getBalance();
+      amount = amount + balance;
+
+ addTransaction(actNum, "Deposit",  amount);
+    }
+  }// end deposit
+  
+  public void withdraw(Customer cust, double amount, String actNum) {
+     addTransaction(actNum, "Withdraw",  amount);
+  }// end withdraw
+}// end Savings

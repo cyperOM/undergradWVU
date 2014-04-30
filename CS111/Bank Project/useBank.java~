@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+public class useBank {
+  
+  static  Scanner scan = new Scanner (System.in);
+  public static int menu ()
+  { int choice;
+    System.out.println("Open an Account                      1");
+    System.out.println("Make an Additional Account           2");
+    System.out.println("Make a Withdrawl                     3");
+    System.out.println("Make a Deposit                       4");
+    System.out.println("Get Account Information              5");
+    System.out.println("Exit                                 6");
+    choice = scan.nextInt();
+    scan.nextLine();
+    return choice;
+  }// end menu
+  
+  public  static void main (String[] args){  
+    Bank theBank = new Bank();  
+    
+    //  Transaction theTrans = new Transaction();  
+    int choice;
+    choice = menu();
+    while(choice != 6 ) {
+      switch (choice) { 
+        
+        case 1: 
+          theBank.addAccount();
+          break;
+          
+        case 2: 
+          System.out.println("To open another account we need your customer number");
+          String custNum = scan.next();
+          theBank.addAccount(custNum);
+          break;
+          
+        case 3: 
+          System.out.println("What is your customer number");
+          custNum = scan.next();
+          System.out.println("What is your account number");
+          String actNum = scan.next();
+          System.out.println("How much would you like to deposit");
+          double bal = scan.nextDouble();
+          theBank.makeWithdraw( bal, actNum, custNum); 
+          theBank.displayTrans(actNum, custNum);
+          break;
+          
+        case 4: 
+          System.out.println("What is your customer number");
+          custNum = scan.next();
+          System.out.println("What is your account number");
+          actNum = scan.next();
+          System.out.println("How much would you like to deposit");
+          bal = scan.nextDouble();
+          theBank.makeDeposit(actNum, custNum, bal); 
+          theBank.getBalance(actNum, custNum);
+          theBank.displayTrans(actNum, custNum);
+          break; 
+          
+        case 5: 
+          theBank.displayAccounts();
+          break;  
+          
+        case 6: 
+          break;
+        default: System.out.println("Sorry that is not a valid option.");
+      } // end case 
+      choice = menu();
+    } // end while
+  } // end main  
+} // end useBank
+
+
+
+

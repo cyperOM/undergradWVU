@@ -1,0 +1,40 @@
+public class Adult extends Customer {
+  double SAVINGS_INTEREST = 0.9;
+  double CHECK_INTEREST = 0.4;
+  double CHECK_CHARGE = 0;
+  double OVERDRAFT_PENALTY = 2.00;
+  
+  public Adult () {
+    //super();
+    SAVINGS_INTEREST = 0.9;
+    CHECK_INTEREST = 0.4;
+    CHECK_CHARGE = 0;
+    OVERDRAFT_PENALTY = 2.00;  
+  }// end Adult
+ 
+  public Adult(String cn, int a, String fname, String lname, String ad, String t, String acctType, String an, double bal) {
+    super();
+  }// end Adult
+  
+  // getters
+  public double getSavingInterest(){
+    return SAVINGS_INTEREST;
+  }// end getter: getSavingInterest
+  
+  public  double getCheckingInterest() {
+    return CHECK_INTEREST; 
+  }// end getter: getCheckingInterest
+  
+  public double getCheckCharge(){
+    return CHECK_CHARGE;
+  }// end getter: getCheckCharge
+  
+  public  double getOverdraftPenality() {
+    return OVERDRAFT_PENALTY;   
+  }// end getter: getOverdraftPenality
+  
+  public String toString()
+   {  return "Saving Interest: " + SAVINGS_INTEREST + "/n Checking Interest: " + CHECK_INTEREST + 
+   "/n Check Charge:" + CHECK_CHARGE + "/n Overdraft Penalty: " + OVERDRAFT_PENALTY;
+  }// end toString
+}// end Adult
