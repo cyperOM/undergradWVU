@@ -1,0 +1,105 @@
+friendadd root
+viewby root
+viewby rOOt
+friendadd rOOt
+friendadd joe
+postpicture noobs.txt
+postpicture fudge.txt
+chmod fudge.txt rw -- --
+chmod noobs.txt rw -- --
+logout
+viewby joe
+writecomments fudge.txt Comment from phil
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+chmod noobs.txt rw rw rw
+chmod fudge.txt rw rw rw
+logout
+viewby root
+listadd testing
+friendlist joe testing
+friendlist joe testing
+chlst fudge.txt testing
+chlst noobs.txt testing
+chmod noobs.txt rw rw --
+chmod fudge.txt rw rw -- 
+logout
+viewby joe
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+logout
+viewby root
+chmod noobs.txt rw r- -- 
+chmod fudge.txt rw r- -- 
+logout
+viewby joe
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+logout
+viewby root
+chmod noobs.txt rw -w -- 
+chmod fudge.txt rw -w -- 
+logout
+viewby joe
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+logout
+viewby root
+chmod noobs.txt rw -- r- 
+chmod fudge.txt rw -- r- 
+logout
+viewby joe
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+logout
+viewby root
+listadd secondtest
+chlst fudge.txt secondtest
+chlst noobs.txt secondtest
+chmod noobs.txt rw -- -w 
+chmod fudge.txt rw -- -w 
+logout
+viewby joe
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+logout
+viewby root
+listadd secondtest
+chmod noobs.txt rw rw --
+chmod fudge.txt rw rw -- 
+logout
+viewby joe
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+chown noobs.txt joe
+chown fudge.txt joe
+logout
+viewby root
+chmod noobs.txt rw -- --
+chmod fudge.txt rw -- -- 
+chown noobs.txt joe
+chown fudge.txt joe
+logout
+viewby joe
+writecomments fudge.txt Text from Tim in fudge
+writecomments noobs.txt Text from phil in noobs
+readcomments fudge.txt
+readcomments noobs.txt
+chown noobs.txt joe
+chown fudge.txt joe
+logout
+end

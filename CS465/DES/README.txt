@@ -1,0 +1,19 @@
+Note: For some reason garbage is printed to the terminal line after the
+program is executed. I'm not sure why, but it doesn't appear to alter
+the functionality of the program or the content of the Output.txt file.
+
+-	Language: java
+-	Imports: 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
+import java.util.Scanner;
+
+-      To compile: javac desSubmission.java
+-      To run: java desSubmission
+-      Output file: Output.txt
+-      Password used to receive given output file: password
+

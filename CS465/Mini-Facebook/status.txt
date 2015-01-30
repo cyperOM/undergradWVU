@@ -1,0 +1,16 @@
+2.2 Status Sheet
+Compiled: Yes
+Works on Shell:  Yes
+program Start Up: works
+viewby: works as expected. Both test cases include this test equally. 
+logout: works as expected. Test case 2 shows very thorough testing.
+friendadd: works as expected. Test case 2 shows very thorough testing.
+listadd: : works as expected. Test case 1 shows very thorough testing.   
+friendlist: : works as expected. Test case 1 shows very thorough testing.   
+postpicture: works as expected. Test case 2 shows very thorough testing.
+chlst: : works as expected. Test case 1 shows very thorough testing.   
+chmod: : works as expected. Test case 1 shows very thorough testing.   
+chown: works as expected. Test case 1 shows very thorough testing.   
+readcomments: work as expected. Test case 1 show very thorough testing.   
+writecomments: works as expected. Test case 1 show very thorough testing.   
+end: works as expected. Both test cases include this test equally. 

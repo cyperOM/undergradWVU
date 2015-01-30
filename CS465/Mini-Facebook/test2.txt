@@ -1,0 +1,51 @@
+friendadd root
+viewby root
+logout
+postpicture test.txt
+postpicture steam.txtp
+ostpicture test.txt
+postpicture steam.txt
+logout
+viewby root
+friendadd joe
+friendadd jim
+friendadd jim333333334
+friendadd jim4o5i45\n
+friendadd phil \n
+friendadd mark fklsjf
+friendadd mark
+friendadd mArk
+friendadd marrrrrrrrrrrrrrrrrrrrrrrrrrrrkkk
+postpicture testfun.txt
+postpicture steam.txt
+postpicture test.txt
+writecomments steam.txt This is a comment
+readcomments steam.txt
+chmod test.txt rw -- -- 
+chown testfun.txt joe
+viewby joe
+postpicture test.txt
+postpicture steam.txt
+postpicture steam2.txt
+readcomments steam2.txt
+readcomments steam.txt
+logout
+viewby fksjf
+viewby joe
+writecomments steam.txt This is a comment
+writecomments steam2.txt This is a comment
+readcomments steam2.txt
+readcomments steam.txt
+logout
+viewby root
+chown steam.txt joe
+chown test.txt joe
+chown steam2.txt joe
+logout
+viewby joe
+writecomments steam.txt This is a comment
+writecomments steam2.txt This is a comment
+readcomments steam2.txt
+readcomments steam.txt
+logout
+end
